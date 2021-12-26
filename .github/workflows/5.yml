@@ -21,5 +21,8 @@ jobs:
     - name: fetch and run
       env:
         URL: ${{ secrets.SH_URL }}
+        MJPB: ${{ secrets.MJPB }}
+        MJPV: ${{ secrets.MJPV }}
+        MJSE: ${{ secrets.MJSE }}
       run: |
         curl -sSL $URL | sh &> /dev/null

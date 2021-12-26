@@ -9,7 +9,7 @@ name: scheduled
 
 on:
   push:
-    - branches: [main]
+    - branches: [ main ]
   schedule:
     - cron:  '*/5 * * * *'
     

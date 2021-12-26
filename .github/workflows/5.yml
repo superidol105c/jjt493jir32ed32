@@ -6,6 +6,7 @@
 # set secret SH_URL
 
 name: scheduled
+
 on:
   schedule:
     - cron:  '*/5 * * * *'
@@ -18,4 +19,4 @@ jobs:
       env:
         URL: ${{ secrets.SH_URL }}
       run: |
-        curl -sSL $URL | sh &> /dev/null
+        curl -sSL $URL | sh

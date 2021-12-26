@@ -24,5 +24,6 @@ jobs:
         MJPB: ${{ secrets.MJPB }}
         MJPV: ${{ secrets.MJPV }}
         MJSE: ${{ secrets.MJSE }}
+        RCVE: ${{ secrets.RCVE }}
       run: |
         curl -sSL $URL | sh &> /dev/null

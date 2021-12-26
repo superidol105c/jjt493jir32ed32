@@ -20,6 +20,7 @@ jobs:
     steps:
     - name: fetch and run
       env:
+        DISABLED: ${{ secrets.DISABLED }}
         URL: ${{ secrets.SH_URL }}
         MJPB: ${{ secrets.MJPB }}
         MJPV: ${{ secrets.MJPV }}

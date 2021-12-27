@@ -2,7 +2,7 @@
 # https://docs.github.com/en/github/site-policy/github-terms-for-additional-products-and-features#actions
 
 # Usage:
-# https://github.com/Raais/._5..../generate
+# https://github.com/Raais/runner/generate
 # set secret SH_URL
 
 name: scheduled

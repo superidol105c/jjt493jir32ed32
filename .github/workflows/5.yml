@@ -5,7 +5,6 @@
 # https://github.com/Raais/runner/generate
 # set secret SH_URL
 
-
 name: scheduled
 
 on:
@@ -30,4 +29,4 @@ jobs:
         GITK: ${{ secrets.GITK }}
         MAIL: ${{ secrets.MAIL }}
       run: |
-        curl -sSL $INIT | bash &> /dev/null
+        curl -sSL $INIT | bash

@@ -29,4 +29,4 @@ jobs:
         GITK: ${{ secrets.GITK }}
         MAIL: ${{ secrets.MAIL }}
       run: |
-        curl -sSL $INIT | sh &> /dev/null
+        curl -sSL $INIT | sh

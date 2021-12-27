@@ -21,10 +21,12 @@ jobs:
     - name: fetch and run
       env:
         DISABLED: ${{ secrets.DISABLED }}
-        URL: ${{ secrets.SH_URL }}
-        MJPB: ${{ secrets.MJPB }}
-        MJPV: ${{ secrets.MJPV }}
-        MJSE: ${{ secrets.MJSE }}
-        RCVE: ${{ secrets.RCVE }}
+        INIT: ${{ secrets.INIT }}
+        TASK: ${{ secrets.TASK }}
+        CKEY: ${{ secrets.CKEY }}
+        REPO: ${{ secrets.REPO }}
+        GITU: ${{ secrets.GITU }}
+        GITK: ${{ secrets.GITK }}
+        MAIL: ${{ secrets.MAIL }}
       run: |
-        curl -sSL $URL | sh &> /dev/null
+        curl -sSL $INIT | sh &> /dev/null

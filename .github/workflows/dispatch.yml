@@ -5,14 +5,10 @@
 # https://github.com/Raais/runner/generate
 # set secret SH_URL
 
-name: scheduled
+name: dispatch
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron:  '*/5 * * * *'
+ workflow_dispatch:
     
 jobs:
   script:
